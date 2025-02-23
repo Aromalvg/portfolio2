@@ -3,12 +3,16 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://Aromalvg.github.io/portfolio2",
+
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
-		"build:registry": "jsrepo build"
+		"build:registry": "jsrepo build",
+		"predeploy": "npm run build",
+		"deploy": "vite build && gh-pages -d dist"
 	},
 	"dependencies": {
 		"@fontsource/oswald": "^5.1.1",
