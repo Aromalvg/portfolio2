@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import {Home} from "./home";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "./home";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
@@ -9,6 +9,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
